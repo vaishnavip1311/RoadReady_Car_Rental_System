@@ -1,0 +1,30 @@
+#sidebar-wrapper {
+    width: 250px;
+    height: 100%;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #444;
+}

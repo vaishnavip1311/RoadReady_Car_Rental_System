@@ -1,0 +1,14 @@
+.fanta-heading {
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+.btn-fanta {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+}
+
+.btn-fanta:hover {
+  background-color: #e65c00;
+}

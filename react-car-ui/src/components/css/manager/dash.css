@@ -1,0 +1,259 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #FFF3E0; 
+}
+
+body, html {
+    height: 100%;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent;
+}
+
+
+#wrapper {
+    padding-left: 0;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 220px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    left: 220px;
+    width: 0;
+    height: 100%;
+    margin-left: -220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #ff6f00; 
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 220px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding-top: 70px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -220px;
+}
+
+
+.navbar {
+    padding: 0;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: #ffa000;
+    transition: width 0.2s ease-in;
+}
+
+.sidebar-nav li:first-child a {
+    color: #fff;
+    background-color: #e65100;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #fff3e0;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.sidebar-header {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.sidebar-brand {
+    height: 65px;
+    background: linear-gradient(to right bottom, #f57c00 50%, #ff6f00 50%);
+    padding-top: 1em;
+}
+
+.sidebar-brand a {
+    color: #fff3e0;
+    text-decoration: none;
+}
+
+.sidebar-brand a:hover {
+    color: #ffffff;
+}
+
+.dropdown-header {
+    text-align: center;
+    font-size: 1em;
+    color: #fff3e0;
+    background: linear-gradient(to right bottom, #f57c00 50%, #ff6f00 50%);
+}
+
+.sidebar-nav .dropdown-menu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #fb8c00;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+.nav.sidebar-nav li a::before {
+    font-family: FontAwesome;
+    content: "\f0da";
+    vertical-align: baseline;
+    display: inline-block;
+    padding-right: 5px;
+    color: #ffe0b2;
+}
+
+
+.hamburger {
+    position: fixed;
+    top: 20px;
+    z-index: 999;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+    outline: none;
+}
+
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom {
+    background-color: #ff6f00;
+}
+
+.hamburger.is-closed .hamb-top {
+    top: 5px;
+}
+
+.hamburger.is-closed .hamb-middle {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger.is-closed .hamb-bottom {
+    bottom: 5px;
+}
+
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+    background-color: #ff6f00;
+}
+
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger.is-open .hamb-top {
+    transform: rotate(45deg);
+}
+
+.hamburger.is-open .hamb-middle {
+    display: none;
+}
+
+.hamburger.is-open .hamb-bottom {
+    transform: rotate(-45deg);
+}
+
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 111, 0, 0.3);
+    z-index: 1;
+}
+
+
+

@@ -1,0 +1,124 @@
+
+.login-container {
+  margin-top: 80px;
+}
+
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  border: 2px solid #ff6f00;
+  max-width: 380px;          
+  margin: auto;
+  box-shadow: 0 0 12px rgba(255, 111, 0, 0.4); /* Subtle glow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-card:hover {
+  box-shadow: 0 0 18px rgba(255, 111, 0, 0.6); /* Glow on hover */
+}
+
+
+.login-header {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff6f00;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 15px;
+}
+
+
+.login-label {
+  font-weight: 500;
+  color: #333;
+}
+
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff6f00;
+  box-shadow: 0 0 6px rgba(255, 111, 0, 0.4);
+}
+
+
+.login-btn {
+  background-color: #ff6f00;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #e65c00;
+}
+
+
+.login-alert {
+  font-size: 14px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+.login-footer {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 12px;
+  color: #555;
+  background-color: transparent;
+  border-top: none;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: white; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white; 
+  box-sizing: border-box;
+}
+
+.platform-title {
+  color: #ff6f00;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.platform-tagline {
+  font-style: italic;
+  color: #ff6f00;
+  font-size: 16px;
+  margin-top: -10px;
+  font-weight: 500;
+}
+

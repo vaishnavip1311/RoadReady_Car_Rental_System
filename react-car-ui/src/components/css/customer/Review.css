@@ -1,0 +1,9 @@
+.text-fanta {
+  color: #ff6f00;
+}
+
+.badge-rating {
+  z-index: 1;
+  margin-right: 10px;
+  margin-top: -10px;
+}

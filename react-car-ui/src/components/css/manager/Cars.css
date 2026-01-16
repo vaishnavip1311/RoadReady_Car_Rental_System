@@ -1,0 +1,75 @@
+.carlist-container {
+  background-color: #fff8f0;
+  padding: 40px;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
+.fanta-title {
+  color: #ff6f00;
+}
+
+.fanta-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #ff6f00;
+  border: none;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.car-card {
+  background-color: #fff3e0;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.2);
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+}
+
+.text-fanta {
+  color: #e65100;
+  font-weight: bold;
+}
+
+.btn-fanta {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-fanta:hover {
+  background-color: #e65100;
+}
+
+.btn-outline-fanta {
+  border: 2px solid #ff6f00;
+  color: #ff6f00;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-fanta:hover {
+  background-color: #ff6f00;
+  color: white;
+}
+.fanta-breadcrumb {
+  padding: 10px;
+}
+
+.fanta-breadcrumb .breadcrumb-item a {
+  color: #ff6f00 !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.fanta-breadcrumb .breadcrumb-item.active {
+  color: #ff6f00 !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+

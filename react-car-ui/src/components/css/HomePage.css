@@ -1,0 +1,160 @@
+.left-pane {
+  width: 40%;
+  background-color: #ff6f00;
+  color: white;
+  padding: 40px 30px;
+}
+
+.right-pane {
+  width: 60%;
+  background-color: #ffe5b4; /* Light orange */
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadready-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  margin: 0;
+  position: relative;
+  background: linear-gradient(
+    270deg,
+    #ff6f00,
+    #ffd54f,
+    #ff6f00,
+    #ffd54f,
+    #ff6f00
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glitter 3s ease-in-out infinite;
+  user-select: none;
+  /* ensure containing sparkle dots */
+  display: inline-block;
+}
+
+/* Sparkle container */
+.roadready-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 2;
+}
+
+/* Sparkle dots */
+.sparkle {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 6px 2px #fff, 0 0 12px 4px #ffd54f;
+  animation: sparkleAnim 2s infinite ease-in-out;
+}
+
+/* Animate sparkle opacity */
+@keyframes sparkleAnim {
+  0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg);}
+  50% { opacity: 1; transform: scale(1.2) rotate(45deg);}
+}
+
+/* Positions and sizes of sparkles */
+.sparkle1 {
+  top: 10%;
+  left: 15%;
+  width: 6px;
+  height: 6px;
+  animation-delay: 0s;
+}
+
+.sparkle2 {
+  top: 30%;
+  left: 40%;
+  width: 4px;
+  height: 4px;
+  animation-delay: 0.5s;
+}
+
+.sparkle3 {
+  top: 60%;
+  left: 70%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 1s;
+}
+
+.sparkle4 {
+  top: 20%;
+  left: 80%;
+  width: 3px;
+  height: 3px;
+  animation-delay: 1.5s;
+}
+
+.sparkle5 {
+  top: 50%;
+  left: 25%;
+  width: 4px;
+  height: 4px;
+  animation-delay: 2s;
+}
+
+@keyframes glitter {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.login-btn {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 110px;
+  height: 42px;
+  border-radius: 6px;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #e65c00;
+}
+.quote-section {
+  margin-top: 20px;
+}
+
+.main-quote {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+

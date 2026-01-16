@@ -1,0 +1,41 @@
+/* CarMaintenance.css */
+
+.fanta-heading {
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+.btn-fanta {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-fanta:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.car-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
